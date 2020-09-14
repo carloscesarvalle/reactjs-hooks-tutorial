@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class ClassCounterTwo extends Component {
+class SecondExampleWithClass extends Component {
   constructor() {
     super();
     this.state = {
@@ -26,4 +26,4 @@ class ClassCounterTwo extends Component {
   }
 }
 
-export default ClassCounterTwo;
+export default SecondExampleWithClass;

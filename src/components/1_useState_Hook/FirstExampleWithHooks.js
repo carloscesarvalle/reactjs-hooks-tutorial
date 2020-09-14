@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
-const HookCounter = () => {
+// I'm creating a simple button that increases a number by one. I'm starting from zero.
+
+
+const FirstExampleWithHooks = () => {
   const [counter, setCounter] = useState(0);
 
   return (
@@ -11,4 +14,4 @@ const HookCounter = () => {
   );
 };
 
-export default HookCounter;
+export default FirstExampleWithHooks;

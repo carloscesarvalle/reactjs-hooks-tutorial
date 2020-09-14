@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
-class ClassCounterOne extends Component {
+// In this example we see how we have to split document.title into two cycle methods: componentDidMount and componentDidUpdate 
+
+class ThirdExampleWithClass extends Component {
   constructor() {
     super();
     this.state = {
@@ -14,6 +16,7 @@ class ClassCounterOne extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
+  // We use this conditional rendering to optimize performance. Without this conditional every single change on this.state.name would update the DOM
     if (prevState.count !== this.state.count) {
       document.title = `clicked ${this.state.count} times`;
       console.log("updating title");
@@ -23,7 +26,7 @@ class ClassCounterOne extends Component {
   render() {
     return (
       <div>
-        {/* This is a good example how linking components that are not related under componentDidUpdate umbrella is not the best option.
+        {/* This is a good example how linking components that are not related under componentDidUpdate is not the best option.
  Check the console to see how "updating title" shows up even when you type on input          */}
         <input
           type="text"
@@ -40,4 +43,4 @@ class ClassCounterOne extends Component {
   }
 }
 
-export default ClassCounterOne;
+export default ThirdExampleWithClass;

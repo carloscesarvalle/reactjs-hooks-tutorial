@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const HookCounterOne = () => {
+const ThirdExampleWithHooks = () => {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("");
 
@@ -23,4 +23,4 @@ const HookCounterOne = () => {
   );
 };
 
-export default HookCounterOne;
+export default ThirdExampleWithHooks;

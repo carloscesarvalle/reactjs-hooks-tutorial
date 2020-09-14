@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 
-const HookCounterFour = () => {
+// In this example the initial value of useState Hook is an array
+
+const FifthExampleWithHooks = () => {
+
   const [items, setItems] = useState([]);
+  
   const addItem = () => {
     setItems([
       ...items,
@@ -11,6 +15,7 @@ const HookCounterFour = () => {
       },
     ]);
   };
+  
   return (
     <div>
       <ul>
@@ -23,4 +28,4 @@ const HookCounterFour = () => {
   );
 };
 
-export default HookCounterFour;
+export default FifthExampleWithHooks;

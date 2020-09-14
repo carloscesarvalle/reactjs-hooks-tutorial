@@ -1,37 +1,46 @@
 import React from "react";
-import ClassCounter from "./components/ClassCounter";
-import HookCounter from "./components/HookCounter";
-import HookCounterTwo from "./components/HookCounterTwo";
-import HookCounterThree from "./components/HookCounterThree";
-import HookCounterFour from "./components/HookCounterFour";
-import ClassCounterOne from "./components/ClassCounterOne";
-import HookCounterOne from "./components/HookCounterOne";
-import ClassMouse from "./components/ClassMouse";
-import HookMouse from "./components/HookMouse";
+
+//useState Hook Examples
+import FirstExampleWithClass from "./components/1_useState_Hook/FirstExampleWithClass";
+import FirstExampleWithHooks from "./components/1_useState_Hook/FirstExampleWithHooks";
+import SecondExampleWithHooks from "./components/1_useState_Hook/SecondExampleWithHooks";
+import ThirdExampleWithClass from "./components/1_useState_Hook/ThirdExampleWithClass";
+import ThirdExampleWithHooks from "./components/1_useState_Hook/ThirdExampleWithHooks";
+import FourthExampleWithHooks from "./components/1_useState_Hook/FourthExampleWithHooks";
+import FifthExampleWithHooks from "./components/1_useState_Hook/FifthExampleWithHooks";
+
+
+
+import ClassMouse from "./components/2_useEffect_Hook/ClassMouse";
+import HookMouse from "./components/2_useEffect_Hook/HookMouse";
 import MouseContainer from "./components/MouseContainer";
 import IntervalClassCounter from "./components/IntervalClassCounter";
 import IntervalHookCounter from "./components/IntervalHookCounter";
-import DataFetching from "./components/DataFetching";
-import DataFetchingIndividualItem from "./components/DataFetchingIndividualItem";
-import DataFetchingIndividualItemWithButton from "./components/DataFetchingIndividualItemWithButton";
+import DataFetching from "./components/2_useEffect_Hook/DataFetching";
+import DataFetchingIndividualItem from "./components/2_useEffect_Hook/DataFetchingIndividualItem";
+import DataFetchingIndividualItemWithButton from "./components/2_useEffect_Hook/DataFetchingIndividualItemWithButton";
 import UseContextHook from "./components/UseContextHook";
-import CounterOne from "./components/CounterOne";
+import CounterOne from "./components/3_useReducer_Hook/CounterOne";
 
 //For userContext hook
 export const UserContext = React.createContext();
 export const Channel = React.createContext();
 
+
+//Just uncomment out the component you need to display
+
 function App() {
   return (
     <div>
-      {/* <h1>Hooks vs Classes!</h1> */}
-      {/* <ClassCounter /> */}
-      {/* <HookCounter /> */}
-      {/* <HookCounterTwo /> */}
-      {/* <HookCounterThree /> */}
-      {/* <HookCounterFour /> */}
-      {/* <ClassCounterOne /> */}
-      {/* <HookCounterOne /> */}
+      <h1>Hooks vs Classes!</h1>
+      {/* <FirstExampleWithClass /> */}
+      {/* <FirstExampleWithHooks /> */}
+      {/* <SecondExampleWithClass /> */}
+      {/* <SecondExampleWithHooks /> */}
+      {/* <ThirdExampleWithClass /> */}
+      {/* <ThirdExampleWithHooks /> */}
+      {/* <FourthExampleWithHooks /> */}
+      <FifthExampleWithHooks />
       {/* <ClassMouse /> */}
       {/* <HookMouse /> */}
       {/* <MouseContainer /> */}
@@ -45,7 +54,7 @@ function App() {
           <UseContextHook />
         </Channel.Provider>
       </UserContext.Provider> */}
-      <CounterOne />
+      {/* <CounterOne /> */}
     </div>
   );
 }
