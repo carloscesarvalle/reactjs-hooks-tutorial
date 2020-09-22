@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import HookMouse from "./2. useEffect Hook/HookMouse";
-import ClassMouse from "./2. useEffect Hook/ClassMouse";
+import HookMouse from "./2_useEffect_Hook/2_HookMouse";
+import ClassMouse from "./2_useEffect_Hook/ClassMouse";
 
 const MouseContainer = () => {
   const [display, setDisplay] = useState("true");

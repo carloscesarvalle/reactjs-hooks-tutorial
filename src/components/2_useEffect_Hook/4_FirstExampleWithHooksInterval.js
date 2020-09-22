@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const IntervalHookCounter = () => {
+const FirstExampleWithHooksInterval = () => {
   
   const [count, setCount] = useState(0);
 
@@ -21,4 +21,4 @@ const IntervalHookCounter = () => {
   return <div>{count}</div>;
 };
 
-export default IntervalHookCounter;
+export default FirstExampleWithHooksInterval;

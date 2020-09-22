@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class IntervalClassCounter extends Component {
+class FirstExampleWithClassInterval extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -8,21 +8,25 @@ class IntervalClassCounter extends Component {
     };
   }
 
+  tick = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+  
   componentDidMount() {
+    console.log("I'm mounted")
     this.interval = setInterval(this.tick, 1000);
   }
 
   componentWillUnmount() {
+    console.log("I'm unmounted")
     clearInterval(this.interval);
   }
 
-  tick = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
+ 
 
   render() {
     return <div>{this.state.count}</div>;
   }
 }
 
-export default IntervalClassCounter;
+export default FirstExampleWithClassInterval ;
